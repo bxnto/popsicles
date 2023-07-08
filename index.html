@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TSF Popsicle Orders</title>
+    </head>
+    <body>
+         <div id='content'>
+            <div class="flavors" id="blue">
+                <h1>Blue Raspberry:</h1>
+                <h1 class="blueCounter">0</h1>
+                <button class="plusBlue">+</button>
+                <button class="minusBlue">-</button>
+            </div>
+            <div class="flavors" id="orange">
+                <h1>Orange:</h1>
+                <h1 class="orangeCounter">0</h1>
+                <button class="plusOrange">+</button>
+                <button class="minusOrange">-</button>
+            </div>
+            <div class="flavors" id="watermelon">
+                <h1>Watermelon:</h1>
+                <h1 class="waterCounter">0</h1>
+                <button class="plusWater">+</button>
+                <button class="minusWater">-</button>
+            </div>
+            <div class="flavors" id="cherry">
+                <h1>Cherry:</h1>
+                <h1 class="cherryCounter">0</h1>
+                <button class="plusCherry">+</button>
+                <button class="minusCherry">-</button>
+            </div>
+            <div class="flavors" id="rootbeer">
+                <h1>Root Beer</h1>
+                <h1 class="RBCounter">0</h1>
+                <button class="plusRB">+</button>
+                <button class="minusRB">-</button>
+            </div>
+            <div class="flavors" id="pretzel">
+                <h1>Pretzels</h1>
+                <h1 class="pretzelCounter">0</h1>
+                <button class="plusPretzel">+</button>
+                <button class="minusPretzel">-</button>
+            </div>
+        <button class="reset" id="reset" onclick="resetCounters()">Reset</button>
+        </div>
+    </body>
+
+</html>
+
+<script>
+let blueCounter = document.querySelector('.blueCounter');
+let plusBlue = document.querySelector('.plusBlue');
+let minusBlue = document.querySelector('.minusBlue');
+
+let blue = 0;
+
+let waterCounter = document.querySelector('.waterCounter');
+let plusWater = document.querySelector('.plusWater');
+let minusWater = document.querySelector('.minusWater');
+
+let water = 0;
+
+let orangeCounter = document.querySelector('.orangeCounter');
+let plusOrange = document.querySelector('.plusOrange');
+let minusOrange = document.querySelector('.minusOrange');
+
+let orange = 0
+
+let RBCounter = document.querySelector('.RBCounter');
+let plusRB = document.querySelector('.plusRB');
+let minusRB = document.querySelector('.minusRB');
+
+let rootbeer = 0;
+
+let pretzelCounter = document.querySelector('.pretzelCounter');
+let plusPretzel = document.querySelector('.plusPretzel');
+let minusPretzel = document.querySelector('.minusPretzel');
+
+let pretzel = 0
+
+let cherryCounter = document.querySelector('.cherryCounter');
+let plusCherry = document.querySelector('.plusCherry');
+let minusCherry = document.querySelector('.minusCherry');
+
+let cherry = 0
+
+function resetCounters() {
+    blueCounter.innerHTML = 0;
+    orangeCounter.innerHTML = 0;
+    cherryCounter.innerHTML = 0;
+    waterCounter.innerHTML = 0;
+    RBCounter.innerHTML = 0;
+    pretzelCounter.innerHTML = 0;
+
+}
+
+plusBlue.addEventListener("click", ()=>{
+    blue++;
+    blueCounter.innerHTML = blue;
+});
+
+minusBlue.addEventListener("click", ()=>{
+    if (blue > 0) {
+        blue--;
+        blueCounter.innerHTML = blue;  
+    }
+});
+plusOrange.addEventListener("click", ()=>{
+    orange++;
+    orangeCounter.innerHTML = orange;
+});
+
+minusOrange.addEventListener("click", ()=>{
+    if (orange > 0) {
+        orange--;
+        orangeCounter.innerHTML = orange;
+    }
+});
+plusCherry.addEventListener("click", ()=>{
+    cherry++;
+    cherryCounter.innerHTML = cherry;
+});
+minusCherry.addEventListener("click", ()=>{
+    if (cherry > 0) {
+        cherry--;
+        cherryCounter.innerHTML = cherry;
+    }
+});
+plusWater.addEventListener("click", ()=>{
+    water++;
+    waterCounter.innerHTML = water;
+});
+minusWater.addEventListener("click", ()=>{
+    if (water > 0){
+        water--;
+        waterCounter.innerHTML = water;
+    }
+});
+plusRB.addEventListener("click", ()=>{
+    rootbeer++;
+    RBCounter.innerHTML = rootbeer;
+});
+minusRB.addEventListener("click", ()=>{
+    if (rootbeer > 0 ) {
+        rootbeer--;
+        RBCounter.innerHTML = rootbeer;
+    }
+});
+plusPretzel.addEventListener("click", ()=>{
+    pretzel++;
+    pretzelCounter.innerHTML = pretzel;
+});
+minusPretzel.addEventListener("click", ()=>{
+    if (pretzel > 0) {
+        pretzel--;
+        pretzelCounter.innerHTML = pretzel
+    }
+});
+</script>
