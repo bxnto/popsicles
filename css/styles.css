@@ -1,0 +1,33 @@
+body {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#blue {
+    color: blue;
+}
+
+#orange {
+    color: orange;
+}
+
+#watermelon {
+    color: pink;
+}
+
+#rootbeer {
+    color: brown;
+}
+
+#cherry {
+    color: red;
+}
+
+#pretzel {
+    color: rgb(102, 45, 1);
+}
+
+.flavors {
+    display: inline-table;
+    padding: 10px;
+    padding-top: 0px;
+}
