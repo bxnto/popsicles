@@ -1,6 +1,16 @@
 body {
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: rgb(255, 249, 241);
+}
+
+
+* {
     touch-action: manipulation;
+}
+
+button {
+    width: 50px;
+    height: 25px;
 }
 
 #blue {
