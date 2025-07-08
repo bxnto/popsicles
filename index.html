@@ -69,11 +69,11 @@ let minusWater = document.querySelector('.minusWater');
 
 let water = 0;
 
-let orangeCounter = document.querySelector('.orangeCounter');
-let plusOrange = document.querySelector('.plusOrange');
-let minusOrange = document.querySelector('.minusOrange');
+let punchCounter = document.querySelector('.orangeCounter');
+let plusPunch = document.querySelector('.plusOrange');
+let minusPunch = document.querySelector('.minusOrange');
 
-let orange = 0
+let punch = 0
 
 let RBCounter = document.querySelector('.RBCounter');
 let plusRB = document.querySelector('.plusRB');
@@ -96,8 +96,8 @@ let cherry = 0
 function resetCounters() {
     blue = 0
     blueCounter.innerHTML = 0;
-    orangeCounter.innerHTML = 0;
-    orange = 0
+    punchCounter.innerHTML = 0;
+    punch = 0
     cherryCounter.innerHTML = 0;
     cherry = 0
     waterCounter.innerHTML = 0;
@@ -119,15 +119,15 @@ minusBlue.addEventListener("click", ()=>{
         blueCounter.innerHTML = blue;  
     }
 });
-plusOrange.addEventListener("click", ()=>{
-    orange++;
-    orangeCounter.innerHTML = orange;
+plusPunch.addEventListener("click", ()=>{
+    punch++;
+    punchCounter.innerHTML = orange;
 });
 
-minusOrange.addEventListener("click", ()=>{
-    if (orange > 0) {
-        orange--;
-        orangeCounter.innerHTML = orange;
+minusPunch.addEventListener("click", ()=>{
+    if (punch > 0) {
+        punch--;
+        punchCounter.innerHTML = orange;
     }
 });
 plusCherry.addEventListener("click", ()=>{
